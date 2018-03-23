@@ -1,0 +1,89 @@
+
+<!-- Full Page Intro -->
+<div class="view full-page-intro" style="background-image: url('../../assets/images/vid_conf.png'); background-repeat: no-repeat; background-size: cover">
+
+  <!-- Mask & flexbox options-->
+  <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+    <!-- Content -->
+    <div class="container">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 white-text text-center text-md-left">
+          <h1 class="display-5 font-weight-bold">We are happy you are here</h1>
+          <hr class="hr-light">
+
+          <h4 class="mb-4 d-none d-md-block">
+            <strong>Welcome to an existing journey ahead</strong>
+          </h4>
+
+          <h4>
+            <strong>Adding colours to your life</strong>
+          </h4>
+
+          <a routerLink="/login" class="btn btn-indigo btn-lg">Existing Member
+            <i class="fa fa-graduation-cap ml-2"></i>
+          </a>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 col-xl-5 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!--Card content-->
+            <div class="card-body">
+              
+                  
+
+              <!-- Form -->
+              <form name="" (submit)="register()">
+                <!-- Heading -->
+                <h3 class="dark-grey-text text-center">
+                  <strong>Register</strong>
+                </h3>
+                <hr>
+                    <div class="md-form">
+                      <label for="name">Full Name</label>
+                      <input type="text" class="form-control" name="name" [(ngModel)]="credentials.name">
+                    </div>
+                    <div class="md-form">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control" name="email" [(ngModel)]="credentials.email">
+                    </div>
+                    <div class="md-form">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" name="password" [(ngModel)]="credentials.password">
+                    </div>                               
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                  <hr>
+                <p class="lead">Already registered? <a routerLink="/login">Sign in</a> instead.</p>
+                </div>
+
+              </form>
+              <!-- Form -->
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+    <!-- Content -->
+
+  </div>
+  <!-- Mask & flexbox options-->
